@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "updated_at": "2026-11-20T21:13:00Z",
+  "configs": [
+    {
+      "code": "NF-DEFAULT",
+      "name": "Default Nufis 1.0.4",
+      "author": "Nufis Team",
+      "category": "General",
+      "description": "Oficjalna, czysta konfiguracja bazowa Nufis Client 1.0.4 z optymalnymi ustawieniami graficznymi i HUD.",
+      "tags": [
+        "Bazowy",
+        "HUD",
+        "Optymalizacja"
+      ],
+      "updated_at": "2026-11-20",
+      "downloads": 1420
+    },
+    {
+      "code": "NF-ANARCHIA1",
+      "name": "Anarchia Pro AutoMarket",
+      "author": "Dukanek_",
+      "category": "AutoMarket",
+      "description": "Zoptymalizowany pod Anarchia.gg AutoMarket — szybkie kupowanie, automatyczne filtry, sortowanie po najnowszych i powiadomienia Discord Webhook.",
+      "tags": [
+        "AutoMarket",
+        "Anarchia",
+        "Sniper",
+        "Webhooks"
+      ],
+      "updated_at": "2026-11-20",
+      "downloads": 3890
+    },
+    {
+      "code": "NF-LEGITPVP",
+      "name": "Legit PvP & Movement",
+      "author": "Dukanek_",
+      "category": "Combat",
+      "description": "Płynne wspomaganie walki 1.21: legit TriggerBot, AimAssist, Sprint, JumpReset, Hitboxes i NoSlowdown z niewykrywalną dynamiką.",
+      "tags": [
+        "Legit",
+        "PvP",
+        "Movement",
+        "TriggerBot"
+      ],
+      "updated_at": "2026-11-20",
+      "downloads": 2740
+    },
+    {
+      "code": "NF-CRYSTAL1",
+      "name": "Modern Combat & Crystal",
+      "author": "Milq",
+      "category": "Combat",
+      "description": "Konfiguracja do CPvP / BoxPvP: Auto Crystal, Auto Anchor, Auto Totem, Trap, Hole ESP oraz dynamiczny chams.",
+      "tags": [
+        "CPvP",
+        "AutoCrystal",
+        "AutoTotem",
+        "Chams"
+      ],
+      "updated_at": "2026-11-20",
+      "downloads": 1950
+    }
+  ]
+}

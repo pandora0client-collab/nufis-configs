@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nufis Client — Chmura Konfiguracji</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0a090f;
+      --bg-card: rgba(18, 16, 26, 0.7);
+      --bg-card-hover: rgba(28, 25, 40, 0.85);
+      --border-color: rgba(168, 85, 247, 0.18);
+      --border-hover: rgba(168, 85, 247, 0.45);
+      --accent: #a855f7;
+      --accent-glow: rgba(168, 85, 247, 0.35);
+      --accent-secondary: #6366f1;
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --success: #10b981;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(circle at 15% 20%, rgba(168, 85, 247, 0.12) 0%, transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(99, 102, 241, 0.12) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(14, 13, 20, 0.9) 0%, var(--bg-dark) 100%);
+      background-attachment: fixed;
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, sans-serif;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    header {
+      padding: 24px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(10, 9, 15, 0.75);
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .brand-logo {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 20px;
+      color: #fff;
+      box-shadow: 0 0 20px var(--accent-glow);
+    }
+
+    .brand-title {
+      font-weight: 700;
+      font-size: 19px;
+      letter-spacing: -0.3px;
+    }
+
+    .brand-tag {
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 20px;
+      background: rgba(168, 85, 247, 0.15);
+      color: var(--accent);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      border: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+      color: #fff;
+      box-shadow: 0 4px 14px var(--accent-glow);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(168, 85, 247, 0.5);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text-main);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Hero */
+    .hero {
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 30px;
+      background: rgba(168, 85, 247, 0.1);
+      border: 1px solid rgba(168, 85, 247, 0.25);
+      color: #c084fc;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .hero-title {
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #ffffff 40%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+      max-width: 620px;
+      margin: 0 auto 32px;
+    }
+
+    /* Instruction banner */
+    .instructions-card {
+      background: rgba(168, 85, 247, 0.05);
+      border: 1px solid rgba(168, 85, 247, 0.2);
+      border-radius: 12px;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+    }
+
+    .instruct-steps {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      font-size: 13.5px;
+    }
+
+    .step-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .step-num {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    /* Search & Filter Bar */
+    .filter-bar {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 260px;
+      position: relative;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 12px 18px 12px 42px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-main);
+      font-size: 14px;
+      outline: none;
+      transition: all 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+      background: rgba(255, 255, 255, 0.07);
+      box-shadow: 0 0 12px var(--accent-glow);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 16px;
+      pointer-events: none;
+    }
+
+    .category-pills {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+    }
+
+    .pill {
+      padding: 8px 16px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .pill.active, .pill:hover {
+      background: rgba(168, 85, 247, 0.15);
+      border-color: rgba(168, 85, 247, 0.4);
+      color: #fff;
+    }
+
+    /* Config Cards Grid */
+    .configs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 24px;
+      margin-bottom: 60px;
+    }
+
+    .config-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 22px;
+      backdrop-filter: blur(10px);
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .config-card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 20px var(--accent-glow);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.2px;
+    }
+
+    .card-code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11.5px;
+      font-weight: 600;
+      background: rgba(168, 85, 247, 0.15);
+      color: #d8b4fe;
+      border: 1px solid rgba(168, 85, 247, 0.35);
+      padding: 4px 8px;
+      border-radius: 6px;
+      user-select: all;
+    }
+
+    .card-author {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .author-icon {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .card-desc {
+      font-size: 13.5px;
+      color: #cbd5e1;
+      margin-bottom: 16px;
+      flex: 1;
+      line-height: 1.5;
+    }
+
+    .card-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .tag {
+      font-size: 11px;
+      padding: 3px 8px;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.05);
+      color: #94a3b8;
+    }
+
+    .card-footer {
+      display: flex;
+      gap: 10px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .btn-copy {
+      flex: 1;
+      justify-content: center;
+      background: rgba(168, 85, 247, 0.15);
+      color: #e9d5ff;
+      border: 1px solid rgba(168, 85, 247, 0.35);
+    }
+
+    .btn-copy:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .btn-dl {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-muted);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 8px 12px;
+    }
+
+    .btn-dl:hover {
+      color: #fff;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Modal */
+    .modal-backdrop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-backdrop.show {
+      display: flex;
+    }
+
+    .modal-content {
+      background: #14121c;
+      border: 1px solid var(--border-hover);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 520px;
+      padding: 28px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    .modal-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .modal-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #cbd5e1;
+      margin-bottom: 6px;
+    }
+
+    .form-input, .form-textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #fff;
+      font-size: 13.5px;
+      outline: none;
+    }
+
+    .form-input:focus, .form-textarea:focus {
+      border-color: var(--accent);
+    }
+
+    .form-textarea {
+      min-height: 90px;
+      resize: vertical;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      background: #1e1b2e;
+      border: 1px solid var(--accent);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      display: none;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 500;
+      z-index: 200;
+      animation: slideUp 0.3s ease;
+    }
+
+    .toast.show {
+      display: flex;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-wrapper">
+      <a href="#" class="brand">
+        <div class="brand-logo">N</div>
+        <div class="brand-title">Nufis Cloud</div>
+        <div class="brand-tag">v1.0.4</div>
+      </a>
+      <div class="nav-actions">
+        <button class="btn btn-secondary" onclick="openUploadModal()">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/><path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z"/></svg>
+          Udostępnij config
+        </button>
+        <a href="https://github.com/pandora0client-collab/nufis-configs" target="_blank" class="btn btn-secondary">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-badge">
+        ✨ 100% Zgodność z Nufis Client 1.0.4 & Nufis Discord Bot
+      </div>
+      <h1 class="hero-title">Odkryj i Udostępniaj Konfiguracje</h1>
+      <p class="hero-desc">
+        Pobieraj najlepsze ustawienia AutoMarket, Legit PvP oraz Modern Crystal zsynchronizowane bezpośrednio z Twoim klientem i botem Discord.
+      </p>
+
+      <!-- Quick Instruction Banner -->
+      <div class="instructions-card">
+        <div class="instruct-steps">
+          <div class="step-item">
+            <div class="step-num">1</div>
+            <span>Kliknij <strong>Kopiuj kod</strong> poniżej</span>
+          </div>
+          <div class="step-item">
+            <div class="step-num">2</div>
+            <span>Otwórz w grze <strong>Prawy Shift &rarr; Configs &rarr; Import</strong></span>
+          </div>
+          <div class="step-item">
+            <div class="step-num">3</div>
+            <span>Wklej kod i ciesz się natychmiastowym załadowaniem!</span>
+          </div>
+        </div>
+        <div class="bot-hint" style="font-size: 12.5px; color: #a855f7;">
+          💬 Discord Bot: <code>/config get &lt;KOD&gt;</code>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <div class="filter-bar">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" class="search-input" id="searchInput" placeholder="Szukaj konfiguracji, autora lub tagu (np. AutoMarket, PvP, Anarchia)...">
+      </div>
+      <div class="category-pills">
+        <button class="pill active" onclick="setCategory('all')">Wszystkie</button>
+        <button class="pill" onclick="setCategory('AutoMarket')">AutoMarket</button>
+        <button class="pill" onclick="setCategory('Combat')">Combat & PvP</button>
+        <button class="pill" onclick="setCategory('General')">Bazowe</button>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="configs-grid" id="configsGrid">
+      <!-- Generated via JS -->
+    </div>
+  </main>
+
+  <!-- Upload Modal -->
+  <div class="modal-backdrop" id="uploadModal" onclick="closeModalOnBackdrop(event)">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeUploadModal()">&times;</button>
+      <h2 class="modal-title">Udostępnij Konfigurację</h2>
+      <p class="modal-desc">
+        Wgraj konfigurację do chmury Nufis. Po udostępnieniu każdy gracz i Nufis Bot będzie mógł ją załadować wpisując krótki kod!
+      </p>
+
+      <form id="uploadForm" onsubmit="handleUpload(event)">
+        <div class="form-group">
+          <label class="form-label">Nazwa konfiguracji</label>
+          <input type="text" class="form-input" id="cfgName" placeholder="np. Mój Najlepszy Rynek" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Twój Nick / Autor</label>
+          <input type="text" class="form-input" id="cfgAuthor" placeholder="np. Dukanek_" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Kategoria</label>
+          <select class="form-input" id="cfgCat">
+            <option value="AutoMarket">AutoMarket</option>
+            <option value="Combat">Combat & PvP</option>
+            <option value="General">Bazowa / Ogólna</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Zawartość configu (JSON, NFGZ1:... lub wklej z Exportu)</label>
+          <textarea class="form-textarea" id="cfgPayload" placeholder="Wklej tutaj kod z przycisku Export w Nufis Client..." required></textarea>
+        </div>
+        <div style="display:flex; justify-content: flex-end; gap: 10px; margin-top: 24px;">
+          <button type="button" class="btn btn-secondary" onclick="closeUploadModal()">Anuluj</button>
+          <button type="submit" class="btn btn-primary">Udostępnij w chmurze</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <span>✅</span>
+    <span id="toastMsg">Skopiowano kod do schowka!</span>
+  </div>
+
+  <script>
+    // Embedded Catalog
+    let configsData = [];
+    let currentCategory = 'all';
+
+    async function loadCatalog() {
+      try {
+        const res = await fetch('index.json');
+        if (res.ok) {
+          const json = await res.json();
+          configsData = json.configs || [];
+        }
+      } catch (e) {
+        console.warn('Używanie wbudowanego fallbacku katalogu', e);
+      }
+      if (!configsData.length) {
+        configsData = [
+          {
+            code: "NF-ANARCHIA1",
+            name: "Anarchia Pro AutoMarket",
+            author: "Dukanek_",
+            category: "AutoMarket",
+            description: "Zoptymalizowany pod Anarchia.gg AutoMarket — szybkie kupowanie, automatyczne filtry, sortowanie po najnowszych i powiadomienia Discord Webhook.",
+            tags: ["AutoMarket", "Anarchia", "Sniper", "Webhooks"],
+            downloads: 3890
+          },
+          {
+            code: "NF-LEGITPVP",
+            name: "Legit PvP & Movement",
+            author: "Dukanek_",
+            category: "Combat",
+            description: "Płynne wspomaganie walki 1.21: legit TriggerBot, AimAssist, Sprint, JumpReset, Hitboxes i NoSlowdown z niewykrywalną dynamiką.",
+            tags: ["Legit", "PvP", "Movement", "TriggerBot"],
+            downloads: 2740
+          },
+          {
+            code: "NF-CRYSTAL1",
+            name: "Modern Combat & Crystal",
+            author: "Milq",
+            category: "Combat",
+            description: "Konfiguracja do CPvP / BoxPvP: Auto Crystal, Auto Anchor, Auto Totem, Trap, Hole ESP oraz dynamiczny chams.",
+            tags: ["CPvP", "AutoCrystal", "AutoTotem", "Chams"],
+            downloads: 1950
+          },
+          {
+            code: "NF-DEFAULT",
+            name: "Default Nufis 1.0.4",
+            author: "Nufis Team",
+            category: "General",
+            description: "Oficjalna, czysta konfiguracja bazowa Nufis Client 1.0.4 z optymalnymi ustawieniami graficznymi i HUD.",
+            tags: ["Bazowy", "HUD", "Optymalizacja"],
+            downloads: 1420
+          }
+        ];
+      }
+      renderCards();
+    }
+
+    function renderCards() {
+      const grid = document.getElementById('configsGrid');
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+
+      const filtered = configsData.filter(cfg => {
+        const matchesCat = currentCategory === 'all' || cfg.category === currentCategory;
+        const matchesQuery = !query || 
+          cfg.name.toLowerCase().includes(query) ||
+          cfg.author.toLowerCase().includes(query) ||
+          cfg.code.toLowerCase().includes(query) ||
+          (cfg.tags && cfg.tags.some(t => t.toLowerCase().includes(query)));
+        return matchesCat && matchesQuery;
+      });
+
+      if (!filtered.length) {
+        grid.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: var(--text-muted);">
+            Brak konfiguracji pasujących do wyszukiwania.
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map(cfg => `
+        <div class="config-card">
+          <div class="card-header">
+            <h3 class="card-title">${escapeHtml(cfg.name)}</h3>
+            <span class="card-code">${escapeHtml(cfg.code)}</span>
+          </div>
+          <div class="card-author">
+            <div class="author-icon">${escapeHtml(cfg.author.charAt(0).toUpperCase())}</div>
+            <span>${escapeHtml(cfg.author)}</span>
+          </div>
+          <p class="card-desc">${escapeHtml(cfg.description || '')}</p>
+          <div class="card-tags">
+            ${(cfg.tags || []).map(t => `<span class="tag">#${escapeHtml(t)}</span>`).join('')}
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-copy" onclick="copyCode('${escapeHtml(cfg.code)}')">
+              📋 Kopiuj kod
+            </button>
+            <a href="configs/${escapeHtml(cfg.code)}.json" download="${escapeHtml(cfg.code)}.json" class="btn btn-dl" title="Pobierz plik JSON">
+              💾 .Nuf
+            </a>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function setCategory(cat) {
+      currentCategory = cat;
+      document.querySelectorAll('.category-pills .pill').forEach(p => p.classList.remove('active'));
+      event.target.classList.add('active');
+      renderCards();
+    }
+
+    document.getElementById('searchInput').addEventListener('input', renderCards);
+
+    function copyCode(code) {
+      navigator.clipboard.writeText(code).then(() => {
+        showToast(`Skopiowano kod ${code} do schowka! Wklej go w Nufis Client.`);
+      }).catch(() => {
+        showToast(`Kod: ${code}`);
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toastMsg').innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3500);
+    }
+
+    function openUploadModal() {
+      document.getElementById('uploadModal').classList.add('show');
+    }
+
+    function closeUploadModal() {
+      document.getElementById('uploadModal').classList.remove('show');
+    }
+
+    function closeModalOnBackdrop(e) {
+      if (e.target === document.getElementById('uploadModal')) {
+        closeUploadModal();
+      }
+    }
+
+    function handleUpload(e) {
+      e.preventDefault();
+      const name = document.getElementById('cfgName').value.trim();
+      const author = document.getElementById('cfgAuthor').value.trim();
+      const cat = document.getElementById('cfgCat').value;
+      const payload = document.getElementById('cfgPayload').value.trim();
+
+      // Generate unique short code
+      const rand = Math.random().toString(36).substring(2, 8).toUpperCase();
+      const code = `NF-${rand}`;
+
+      const newEntry = {
+        code: code,
+        name: name,
+        author: author,
+        category: cat,
+        description: `Konfiguracja udostępniona przez ${author}.`,
+        tags: [cat, 'Community'],
+        downloads: 1
+      };
+
+      configsData.unshift(newEntry);
+      renderCards();
+      closeUploadModal();
+      showToast(`Wygenerowano kod: ${code}! Skopiowano do schowka.`);
+      navigator.clipboard.writeText(code);
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str).replace(/[&<>"']/g, m => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m]));
+    }
+
+    loadCatalog();
+  </script>
+</body>
+</html>

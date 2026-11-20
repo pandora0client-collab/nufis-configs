@@ -1,0 +1,2692 @@
+{
+  "format": "nufis-profile",
+  "version": 2,
+  "accent": -5863723,
+  "opacity": 0.84,
+  "theme": "Nufis",
+  "secondary": -6921536,
+  "customPrimary": -65536,
+  "customSecondary": -1,
+  "features": {
+    "Interface": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Auto GUI scale": true,
+        "GUI scale": 1.0,
+        "Auto HUD scale": true,
+        "HUD scale": 1.0
+      }
+    },
+    "Name Protect": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Name": "Nufis",
+        "Friends": true
+      }
+    },
+    "Watermark": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Username": true,
+        "FPS": false,
+        "Server": false,
+        "Ping": false,
+        "Speed": false,
+        "Scale": 1.0
+      }
+    },
+    "Chat HUD": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Corners": 3.0,
+        "Scale": 1.0
+      }
+    },
+    "Hotkeys": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Scale": 1.0
+      }
+    },
+    "Target HUD": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Follow target": false,
+        "Equipment": true,
+        "Scale": 1.0
+      }
+    },
+    "Media": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Style": "Compact",
+        "Panel width": 232.0,
+        "Linux player": "Auto",
+        "Scale": 1.0
+      }
+    },
+    "Radar": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Range": 48.0,
+        "Scale": 1.0
+      }
+    },
+    "Hotbar": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Scale": 1.0
+      }
+    },
+    "Potions": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Scale": 1.0
+      }
+    },
+    "Armor": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Scale": 1.0
+      }
+    },
+    "World": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Time": 18000.0,
+        "Weather": "Clear",
+        "Sky": "Aurora",
+        "Fog": 0.25
+      }
+    },
+    "World Particles": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Amount": 32.0,
+        "Radius": 9.0,
+        "Speed": 0.055,
+        "Size": 0.065,
+        "Shape": "Bloom"
+      }
+    },
+    "Soul Particles": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Amount": 45.0,
+        "Size": 2.0,
+        "Texture": "Glow"
+      }
+    },
+    "Item Physics": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Speed": 1.0
+      }
+    },
+    "Footprints": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Lifetime": 3.0,
+        "Spacing": 0.45,
+        "Size": 1.0,
+        "Opacity": 0.65
+      }
+    },
+    "Hit Particles": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Shape": "Star",
+        "Amount": 12.0,
+        "Lifetime": 0.9,
+        "Size": 0.7
+      }
+    },
+    "Totem Particles": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Shape": "Star",
+        "Color": "Theme",
+        "Size": 0.8,
+        "Lifetime": 1.5,
+        "Red": 170.0,
+        "Green": 100.0,
+        "Blue": 255.0
+      }
+    },
+    "Motion Blur": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Strength": 0.55,
+        "Sensitivity": 1.0,
+        "Anti Ghosting": true,
+        "Movement": true,
+        "Rotation": true
+      }
+    },
+    "Inventory Animation": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Style": "Slide",
+        "Duration": 0.2,
+        "Distance": 24.0,
+        "Close": true
+      }
+    },
+    "Jump Circles": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Lifetime": 1.4,
+        "Radius": 2.2,
+        "Glow": true
+      }
+    },
+    "Trails": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Ribbon",
+        "Color": "Theme",
+        "Lifetime": 1.2,
+        "Height": 1.8,
+        "Line Width": 2.0,
+        "Glow Contour": true
+      }
+    },
+    "Fullbright": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Brightness": 1.0
+      }
+    },
+    "Block Overlay": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Style": "Shader",
+        "Shader Preset": "Default",
+        "Wave Speed": 1.2,
+        "Wave Scale": 1.0,
+        "Glow": 1.0,
+        "Fill": 0.6,
+        "Alpha": 1.0,
+        "Smooth": 0.24
+      }
+    },
+    "Xray": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Selected blocks": "Choose blocks",
+        "Range": 256.0,
+        "Exposed only": false,
+        "Rescan": "Open"
+      }
+    },
+    "Item ESP": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Corners",
+        "Names": true
+      }
+    },
+    "Logout Spots": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Duration": 60.0
+      }
+    },
+    "Trajectories": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {}
+    },
+    "Players": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Corners",
+        "Health": true,
+        "Distance": true,
+        "Items": true,
+        "Range": 80.0
+      }
+    },
+    "Nametags": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Equipment": true,
+        "Self": false,
+        "Players": true,
+        "Animals": false,
+        "Mobs": false,
+        "Scale": 1.0,
+        "Health": true,
+        "Background Alpha": 0.5
+      }
+    },
+    "Target ESP": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Style": "BK Ring 2",
+        "Speed": 1.0,
+        "Path Mode": "Double Helix",
+        "Ghost Trail": false,
+        "Trail Length": 3.0,
+        "Rotation Speed": 8.0,
+        "Radius": 0.82,
+        "Head Size": 0.095,
+        "Trail Size": 0.055,
+        "Color": "Theme",
+        "BK Source": "Crosshair",
+        "BK Players": true,
+        "BK Mobs": true,
+        "BK Size": 0.5,
+        "BK Thickness": 1.0,
+        "BK Color": "Theme",
+        "BK Primary": "#1464FF",
+        "BK Damage tint": true,
+        "BK Rainbow": false,
+        "BK Through walls": true
+      }
+    },
+    "Chams": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Shader": "Default",
+        "Opacity": 1.0,
+        "Self": true,
+        "Players": true,
+        "Mobs": false,
+        "Animals": false,
+        "Through Walls": false,
+        "Wave Speed": 1.2,
+        "Wave Scale": 1.0,
+        "Glow": 1.0,
+        "Fill": 0.6
+      }
+    },
+    "Hit Color": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {}
+    },
+    "Arrows": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Radius": 80.0
+      }
+    },
+    "Hands": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0,
+        "Scale": 1.0
+      }
+    },
+    "BK Hands Shader": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Style": "Solid",
+        "Colors": "Theme",
+        "Primary": "#B59AEF",
+        "Secondary": "#668DFF",
+        "Solid opacity": 1.0,
+        "Speed": 1.0,
+        "Glass hide hand": false,
+        "Flame color": "Item",
+        "Flame radius": 15.0,
+        "Flame strength": 1.18,
+        "Flame speed": 1.1,
+        "Flame trail": 1.16,
+        "Flame height": 28.0,
+        "Flame fill": false
+      }
+    },
+    "Auto Dripstone": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": 15,
+      "bind": {
+        "type": "keyboard",
+        "code": 15
+      },
+      "additionalBinds": [],
+      "options": {
+        "Fast place": true,
+        "Place delay": 0.0
+      }
+    },
+    "Swing Animation": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Style": "BK Block Hit",
+        "Speed": 2.0,
+        "Only Aura": false
+      }
+    },
+    "No Render": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Lava fog": true,
+        "Water fog": true,
+        "Fire overlay": true,
+        "Inside blocks": true,
+        "Powder snow": true,
+        "Portal": true,
+        "Nausea": true,
+        "Darkness": true,
+        "Equipment overlay": true,
+        "Lava particles": true,
+        "Smoke particles": false,
+        "Weather": false,
+        "Vignette": false,
+        "Spyglass overlay": false
+      }
+    },
+    "Removals": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Hurt camera": true,
+        "Fire overlay": true,
+        "Totem animation": false,
+        "View bobbing": false,
+        "Darkness": true
+      }
+    },
+    "Inspect": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Speed": 1.0
+      }
+    },
+    "Cosmetics": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "MELEE": "Butterfly",
+        "Knife Anim": "Default",
+        "Dark Star Variant": "Devil",
+        "BACKPACK": "None",
+        "WINGS": "None",
+        "CHARACTER": "None"
+      }
+    },
+    "Horse Statistics": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {}
+    },
+    "Crosshair": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Length": 4.0,
+        "Width": 1.0,
+        "Gap": 3.0,
+        "Dynamic": true,
+        "Dot": true,
+        "Hit Marker": true
+      }
+    },
+    "Tracers": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Origin": "Bottom",
+        "Range": 64.0,
+        "Width": 1.0,
+        "Opacity": 0.55
+      }
+    },
+    "China Hat": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Self": true,
+        "Players": false,
+        "Radius": 0.7,
+        "Height": 0.35,
+        "Fill": 0.18,
+        "Color": "Accent"
+      }
+    },
+    "Damage Numbers": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Duration": 1.1,
+        "Size": 11.0
+      }
+    },
+    "Hit Rings": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Duration": 0.65,
+        "Radius": 0.7
+      }
+    },
+    "Aura": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": 21,
+      "bind": {
+        "type": "keyboard",
+        "code": 21
+      },
+      "additionalBinds": [],
+      "options": {
+        "Range": 3.0,
+        "Pre distance": 10.346971261282846,
+        "Rotation": "Ana",
+        "Players": true,
+        "Mobs": true,
+        "Animals": false,
+        "Cancel sprint": true,
+        "Perfect hits": false,
+        "Smart hits": true,
+        "Only criticals": false,
+        "Smart criticals": true,
+        "Raytrace": false,
+        "Yaw speed": 180.0,
+        "Pitch speed": 90.0,
+        "Priority": "Distance",
+        "Target mode": "Single",
+        "FOV": 180.0,
+        "Through walls": true,
+        "Walls range": 2.998392760366245,
+        "Shield breaker": true,
+        "Cancel when eat": true,
+        "Snap mode": "360",
+        "Snap FOV": 50.0,
+        "Only weapon": false
+      }
+    },
+    "Knockback Displacement": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Knockback Direction": "Dynamic",
+        "Only Sprint Knockback": false,
+        "Direction Angle": 0.0,
+        "Change Angle Key": -1.0,
+        "Angle Step": 90.0,
+        "Hide Camera Rotation": false,
+        "Indicator": true,
+        "Scale": 1.0
+      }
+    },
+    "Trap": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": 25,
+      "bind": {
+        "type": "keyboard",
+        "code": 25
+      },
+      "additionalBinds": [],
+      "options": {
+        "Selected blocks": "Choose blocks",
+        "Range": 4.5,
+        "Targets": "Players",
+        "Mode": "Full",
+        "Delay ticks": 0.0,
+        "Roof priority": true,
+        "Rotate": "Default",
+        "Rotation": "Grim",
+        "Max yaw speed": 180.0,
+        "Max pitch speed": 90.0,
+        "Place Mode": "Normal",
+        "Silent Swap": true,
+        "Preferred hand": "Main",
+        "Swing": true,
+        "Raycast": true,
+        "Through Walls": true,
+        "Auto Swap Back": true,
+        "Blocks Per Tick": 20.0,
+        "Render": true,
+        "Obsidian": true,
+        "Ender Chest": true,
+        "Crying Obsidian": true,
+        "Cobblestone": true,
+        "Mossy Cobblestone": true,
+        "Stone": true,
+        "Smooth Stone": true,
+        "Andesite": true,
+        "Diorite": true,
+        "Granite": true,
+        "Tuff": true,
+        "Calcite": true,
+        "Deepslate": true,
+        "Cobbled Deepslate": true,
+        "Blackstone": true,
+        "Place Hit Point": "Random",
+        "Place Order": "Furthest",
+        "Placement Animation": true,
+        "Placement Color": "Theme"
+      }
+    },
+    "Auto Web": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Full",
+        "Range": 4.5,
+        "Targets": "Players",
+        "Delay ticks": 0.0,
+        "Blocks Per Tick": 2.0,
+        "Through Walls": true,
+        "Rotate": "Default",
+        "Place Mode": "Normal",
+        "Raycast": false,
+        "Silent Swap": true,
+        "Swing": true
+      }
+    },
+    "Scaffold": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Selected blocks": "Choose blocks",
+        "Delay ticks": 0.0,
+        "Rotation": "Default",
+        "SafeWalk": true,
+        "Tower": true,
+        "Sprint": true,
+        "Swing": true
+      }
+    },
+    "Performance": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Preset": "Laptop"
+      }
+    },
+    "Backtrack": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": 29,
+      "bind": {
+        "type": "keyboard",
+        "code": 29
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Distance",
+        "Release Window": 276.85306711735205,
+        "Reach": 3.0,
+        "Max Range": 10.0,
+        "Delay": 4146.782086357093,
+        "Fill Alpha": 40.0
+      }
+    },
+    "MoveFix": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Focus"
+      }
+    },
+    "AntiWeb": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Grim",
+        "Y Motion": 0.32,
+        "XZ Motion": 0.19175
+      }
+    },
+    "Speed": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Grim",
+        "Speed": 1.5
+      }
+    },
+    "Sprint": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Legit"
+      }
+    },
+    "Freecam": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Speed": 1.0,
+        "Toggle on damage": true,
+        "Rotation": false,
+        "Interact": false,
+        "Clear water": true
+      }
+    },
+    "Freelock": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Hold",
+      "key": 226,
+      "bind": {
+        "type": "keyboard",
+        "code": 226
+      },
+      "additionalBinds": [],
+      "options": {
+        "Third Person": true
+      }
+    },
+    "Air Stuck": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Limit ticks": 0.0
+      }
+    },
+    "Trident Fly": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Riptide",
+        "Boost": 1.5,
+        "Delay ticks": 10.0
+      }
+    },
+    "SpearLunge": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Auto",
+        "Silent Swap": false,
+        "Packets": 1.0
+      }
+    },
+    "WindHop": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Auto",
+        "Auto Jump": false,
+        "Silent Swap": false
+      }
+    },
+    "Fake Player": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": 12,
+      "bind": {
+        "type": "keyboard",
+        "code": 12
+      },
+      "additionalBinds": [],
+      "options": {
+        "Name": "NufisBot",
+        "Copy Inventory": false,
+        "Helmet": true,
+        "Chestplate": true,
+        "Leggings": true,
+        "Boots": true,
+        "Armor Type": "Netherite"
+      }
+    },
+    "Fake Lag": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": 27,
+      "bind": {
+        "type": "keyboard",
+        "code": 27
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Normal",
+        "Delay": 400.0,
+        "Max distance": 10.0,
+        "Release on interact": true,
+        "Render": true,
+        "Fill alpha": 140.0
+      }
+    },
+    "Rotation View": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {}
+    },
+    "View Model": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Main X": 0.0,
+        "Main Y": 0.0,
+        "Main Z": 0.0,
+        "Main Scale": 1.0,
+        "Offhand X": 0.0,
+        "Offhand Y": 0.0,
+        "Offhand Z": 0.0,
+        "Offhand Scale": 1.0
+      }
+    },
+    "Liquid Fog": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Theme colors": true,
+        "Fallout": 0.03,
+        "Density": 0.75,
+        "HSV Mode": false
+      }
+    },
+    "Post Processing": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Liquid Glass": true,
+        "Glass Opacity": 100.0,
+        "Glass Refraction": 18.0,
+        "Glass Chromatic": 0.0,
+        "Glass Saturation": 78.0,
+        "Glass Highlight": 22.0,
+        "Blur": "Double Kawase",
+        "Kawase Passes": 6.0,
+        "Kawase Offset": 1.65,
+        "Gaussian Radius": 12.0,
+        "Tint": 45.0,
+        "Shadow": false,
+        "Shadow Radius": 28.0
+      }
+    },
+    "Binds": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Scale": 1.0
+      }
+    },
+    "Cooldowns": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Scale": 1.0
+      }
+    },
+    "Staff": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Scale": 1.0
+      }
+    },
+    "Inventory": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Scale": 1.0
+      }
+    },
+    "Notifications": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Style": "Compact",
+        "Direction": "Down",
+        "Progress": true,
+        "Glow": true,
+        "Max": 4.0,
+        "Scale": 0.95974609375
+      }
+    },
+    "Discord RPC": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Show Server": true,
+        "Show Username": false
+      }
+    },
+    "Spinbot": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Speed": 30.0,
+        "Direction": "Right",
+        "Pitch": 0.0,
+        "Movement fix": true,
+        "Show rotation": true
+      }
+    },
+    "Lyrics": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "World",
+        "Angle": -12.0,
+        "Scale": 1.0,
+        "Distance": 4.0,
+        "Height": 2.0,
+        "Lifetime": 3.0,
+        "Spacing": 1.5,
+        "X": 65.0,
+        "Y": 40.0,
+        "Time offset": 0.0,
+        "Context lines": false
+      }
+    },
+    "Auto Miner": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Horizontal distance": 4.0,
+        "Vertical distance": 5.0,
+        "Render": true
+      }
+    },
+    "Auto Rynek": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Open market": "Open"
+      }
+    },
+    "Hotbar Replacer": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Auto detect": true,
+        "Delay": 25.0,
+        "Save key": -1.0,
+        "Restore key": -1.0,
+        "Save layout": "Open",
+        "Restore layout": "Open"
+      }
+    },
+    "Nufis Emotes": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": 5,
+      "bind": {
+        "type": "keyboard",
+        "code": 5
+      },
+      "additionalBinds": [],
+      "options": {
+        "Duration": 10.0,
+        "Third Person": true
+      }
+    },
+    "Aim Assist": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Distance": 6.0,
+        "FOV": 360.0,
+        "Speed": 4.0,
+        "Smoothness": 6.0,
+        "Aim Height": 0.85,
+        "Priority": "Distance",
+        "Only Weapon": false,
+        "Only Players": false,
+        "Invisible": false,
+        "Only Armored": false,
+        "Only Yaw": false,
+        "Multipoint": true,
+        "Wall Check": false,
+        "Micro Movements": true,
+        "Disable On World": false
+      }
+    },
+    "Anti Bot": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "UUID Check": "Auto"
+      }
+    },
+    "Auto Anchor": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Range": 4.5,
+        "Charges": 1.0,
+        "Click Delay": 0.0,
+        "Auto Place": true,
+        "Auto Explode": true,
+        "Rotate": true,
+        "Switch Back": true
+      }
+    },
+    "Error Killer": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Delay": 0.0,
+        "Rotate": true
+      }
+    },
+    "Auto Crystal": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Auto Place": true,
+        "Place Delay": 0.0,
+        "Attack Delay": 0.0,
+        "Attack Range": 3.0,
+        "Rotate": true,
+        "Auto Break": true
+      }
+    },
+    "AutoSwap": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Double",
+        "First Item": "Totem",
+        "Second Item": "Shield",
+        "Wheel 1": "Totem",
+        "Wheel 2": "Head",
+        "Wheel 3": "GApple",
+        "Auto Damage": false,
+        "Target Low HP": true,
+        "Target No Sword": false,
+        "HP Threshold": 10.0
+      }
+    },
+    "Auto Totem": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Grim",
+        "Keep Totem": true,
+        "Open inventory": true,
+        "Inventory delay": 50.0,
+        "Stop Movement": true,
+        "Auto Refill": true,
+        "Refill Slot": 9.0,
+        "Grim Rotation": false,
+        "Pitch": 89.0,
+        "Health": true,
+        "Health Limit": 6.0,
+        "Absorption": true,
+        "Crystal": true,
+        "Crystal Distance": 5.0,
+        "Crystal Height": 3.0,
+        "Anchor": true,
+        "Anchor Distance": 5.0,
+        "Fall": true,
+        "Fall Height": 12.0,
+        "Elytra": true,
+        "Elytra Health": 10.0,
+        "TNT": false,
+        "TNT Distance": 5.0,
+        "Return Item": true,
+        "Return Delay": 500.0
+      }
+    },
+    "Bow Punch": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Pitch": -68.0,
+        "Rotation Mode": "Grim",
+        "Rotation Speed": 200.0,
+        "Charge Ticks": 3.0,
+        "Auto Jump": true,
+        "Auto Sprint": true,
+        "Auto Disable": false
+      }
+    },
+    "Criticals": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "Packet",
+        "Only Aura": false
+      }
+    },
+    "Elytra Target": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Aim Mode": "Silent",
+        "Priority": "Distance",
+        "Range": 60.0,
+        "Prediction": 3.0,
+        "Altitude Offset": 1.4,
+        "Attack Range": 3.0,
+        "Max Yaw": 180.0,
+        "Max Pitch": 90.0,
+        "Auto Rocket": true,
+        "Min Speed": 1.2,
+        "Rocket Delay": 800.0,
+        "Follow Distance": 12.0,
+        "Auto Attack": true,
+        "Smart Criticals": true,
+        "Mace Smash": true,
+        "Safe Terrain": true,
+        "Save Mode": true,
+        "Min HP": 6.0
+      }
+    },
+    "Hit Box": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Expand XZ": 0.35,
+        "Expand Y": 0.1,
+        "Render": true
+      }
+    },
+    "Hit Sound": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Sound": "Metallic",
+        "Volume": 1.0,
+        "Pitch": 1.0
+      }
+    },
+    "Mace Swap": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Smart Criticals": true
+      }
+    },
+    "No Friend Damage": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {}
+    },
+    "No Interact": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {}
+    },
+    "Reach": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Entity Reach": 4.0,
+        "Block Reach": false,
+        "Block Range": 5.0
+      }
+    },
+    "TargetPearl": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Silent Swap": false
+      }
+    },
+    "Velocity": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "NewGrim"
+      }
+    },
+    "Auto Lever": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Range": 4.5,
+        "Cooldown": 0.0,
+        "Buttons": true,
+        "Hand": "Both"
+      }
+    },
+    "No Delay": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Right Click": true,
+        "Right Click Delay": 0.0,
+        "Jump": true,
+        "Block Break": false,
+        "Attack Miss": false
+      }
+    },
+    "No Push": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Entities": true,
+        "Fluids": true,
+        "Blocks": true,
+        "Pistons": false
+      }
+    },
+    "Middle Click Friend": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {}
+    },
+    "Coordinates": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Scale": 1.0
+      }
+    },
+    "Storage ESP": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Range": 24.0,
+        "Names": true,
+        "Alpha": 24.0,
+        "Max Labels": 24.0,
+        "Colors": "Theme",
+        "Chests": true,
+        "Ender Chests": true,
+        "Spawners": true,
+        "Shulkers": true,
+        "Furnaces": true,
+        "Barrels": true,
+        "Enchanting Tables": true,
+        "Pistons": true,
+        "Hoppers": false
+      }
+    },
+    "Cape": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Physics": true,
+        "Motion": 0.85
+      }
+    },
+    "Kill GIF": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Mode": "World",
+        "Duration": 3.0,
+        "World Size": 2.0,
+        "World Height": 1.1,
+        "Through walls": false,
+        "Size": 150.0,
+        "X": 50.0,
+        "Y": 70.0
+      }
+    },
+    "Kill Effect": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Particles": 24.0
+      }
+    },
+    "Breadcrumbs": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Style": "Line",
+        "Max Points": 160.0,
+        "Width": 1.4,
+        "Fade": true
+      }
+    },
+    "Pearl Tracker": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Landing Ring": true,
+        "Owner Label": true,
+        "Trail": true
+      }
+    },
+    "Wet World": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Quality": "Ultra",
+        "Reflection Strength": 0.75,
+        "Wet Darkening": 0.3,
+        "Ripples": true,
+        "Ripple Speed": 1.0,
+        "Rain Only": false
+      }
+    },
+    "Skin Changer": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Username": "Notch",
+        "Model": "Player",
+        "Elytra Model": "Bombardiro Crocodilo"
+      }
+    },
+    "Streamer Mode": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": 65,
+      "bind": {
+        "type": "keyboard",
+        "code": 65
+      },
+      "additionalBinds": [],
+      "options": {}
+    },
+    "Self Destruct": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {}
+    },
+    "Placement Guard": {
+      "enabled": false,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {}
+    },
+    "Market HUD": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Scale": 1.4098398061899038,
+        "Bought": true,
+        "Sold": true,
+        "Listed": true,
+        "Profit": true,
+        "Wallet": true,
+        "Status": true,
+        "History Limit": 3.0
+      }
+    },
+    "HUD": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Watermark": false,
+        "Chat HUD": false,
+        "Hotkeys": false,
+        "Target HUD": false,
+        "Media": false,
+        "Radar": false,
+        "Hotbar": false,
+        "Potions": false,
+        "Armor": false,
+        "Binds": false,
+        "Cooldowns": false,
+        "Staff": false,
+        "Inventory": false,
+        "Notifications": true,
+        "Coordinates": false,
+        "Market HUD": true
+      }
+    }
+  },
+  "selectedBlocks": {
+    "Xray": [
+      "minecraft:diamond_ore",
+      "minecraft:deepslate_diamond_ore",
+      "minecraft:ancient_debris"
+    ]
+  },
+  "positions": {
+    "Notifications": {
+      "x": 0.49361563,
+      "y": 0.8957999
+    },
+    "Market HUD": {
+      "x": 0.29516128,
+      "y": 0.37380493
+    },
+    "Knockback Displacement": {
+      "x": 0.5,
+      "y": 0.02
+    }
+  },
+  "hudOrder": {},
+  "hudPieces": {},
+  "hudColumns": {},
+  "friends": [],
+  "session": {
+    "activeProfile": "dawd",
+    "loadBinds": true
+  },
+  "market": {
+    "active": "default",
+    "profiles": {
+      "default": {
+        "settings": {
+          "modules.settings.auto_market.open_bind": -1,
+          "modules.settings.auto_market.quick_add_bind": -1,
+          "modules.settings.auto_market.scan_key": 16,
+          "modules.settings.auto_market.refresh_rate": {
+            "value": 10.0,
+            "multiplier": 1
+          },
+          "modules.settings.auto_market.confirm_delay": {
+            "value": 0.0,
+            "multiplier": 1
+          },
+          "modules.settings.auto_market.restart_delay": {
+            "value": 0.0,
+            "multiplier": 1
+          },
+          "modules.settings.auto_market.aggressive_mode": true,
+          "modules.settings.auto_market.debug_screen_info": false,
+          "modules.settings.auto_market.unit_mode_global": "Unit",
+          "modules.settings.auto_market.auto_jump": true,
+          "modules.settings.auto_market.auto_repair": true,
+          "modules.settings.auto_market.auto_sell": false,
+          "modules.settings.auto_market.sell_interval": {
+            "value": 1.0,
+            "multiplier": 1
+          },
+          "modules.settings.auto_market.sell_tax": {
+            "value": 2.0,
+            "multiplier": 1
+          },
+          "modules.settings.auto_market.show_history": true,
+          "modules.settings.auto_market.webhook_url": "https://discord.com/api/webhooks/1573382951792550069/ojff31RxIZI1pTQFBO6VYAVKrk6rbTEKq2aZHlwd5fxEvG_oLDsFKZqIc6eWX7w0BAlZ",
+          "modules.settings.auto_market.webhook_screenshot": true,
+          "modules.settings.auto_market.account_type": "modules.settings.auto_market.account_type.non_premium",
+          "modules.settings.auto_market.login_command": "/login {password}",
+          "modules.settings.auto_market.sell_command": "/wystaw {quantity} {price}",
+          "modules.settings.auto_market.market_command": "/ah",
+          "modules.settings.auto_market.custom_title": "",
+          "modules.settings.auto_market.ignore_market_title": false,
+          "modules.settings.auto_market.rapy_mode": false,
+          "modules.settings.auto_market.minestar_mode": false,
+          "modules.settings.auto_market.minestar_next_slot": {
+            "value": 53.0,
+            "multiplier": 1
+          },
+          "modules.settings.auto_market.minestar_prev_slot": {
+            "value": 52.0,
+            "multiplier": 1
+          },
+          "modules.settings.auto_market.confirm_slot": {
+            "value": 11.0,
+            "multiplier": 1
+          },
+          "modules.settings.auto_market.sorting_slot": {
+            "value": 53.0,
+            "multiplier": 1
+          },
+          "modules.settings.auto_market.refresh_slot": {
+            "value": 0.0,
+            "multiplier": 1
+          },
+          "modules.settings.auto_market.next_page_slot": {
+            "value": 53.0,
+            "multiplier": 1
+          },
+          "modules.settings.auto_market.sorting_keyword": "najnowsz",
+          "modules.settings.auto_market.confirm_item_name": "",
+          "modules.settings.auto_market.lore_regex": "(?i).*(?:Koszt|Cena|Price).*?(?:\\$\\s*)?([\\d\\s.,]+(?:mld|[kmbt])?)\\s*\\$?.*",
+          "modules.settings.auto_market.lore_seller_regex": "",
+          "modules.settings.auto_market.auto_reconnect": true,
+          "modules.settings.auto_market.reconnect_delay": {
+            "value": 5.0,
+            "multiplier": 1
+          },
+          "modules.settings.auto_market.highlight_mode": "Border",
+          "modules.settings.auto_market.cheap_color": -863961344,
+          "modules.settings.auto_market.expensive_color": -922812416,
+          "modules.settings.auto_market.item_registry": [
+            {
+              "name": "§4§lDodatkowe serce",
+              "material": "red_dye",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 900.0,
+              "sellPrice": 1199.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 1,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§5Klucz do epickiej skrzynki!",
+              "material": "tripwire_hook",
+              "lore": "§8» §7Klucz ten służy do otworzenia skrzynki,;§8» §7która znajduje się na §f/spawn",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 8500.0,
+              "sellPrice": 9999.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 2,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§aKlucz do rzadkiej skrzynki!",
+              "material": "tripwire_hook",
+              "lore": "§8» §7Klucz ten służy do otworzenia skrzynki,;§8» §7która znajduje się na §f/spawn",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 700.0,
+              "sellPrice": 999.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 1,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "Potion of Strength",
+              "material": "potion",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 250.0,
+              "sellPrice": 360.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "ignoreCustomModelData": false,
+              "potionEffects": [
+                {
+                  "effectId": "strength",
+                  "amplifier": 0,
+                  "duration": 9600
+                }
+              ]
+            },
+            {
+              "name": "§4Anarchiczny hełm",
+              "material": "netherite_helmet",
+              "bannedLore": "",
+              "enchants": "unbreaking 5, protection 5",
+              "enchantments": {
+                "unbreaking": 5,
+                "protection": 5
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 11000.0,
+              "sellPrice": 13500.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 0,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§4Anarchiczna klata",
+              "material": "netherite_chestplate",
+              "bannedLore": "",
+              "enchants": "unbreaking 5, protection 5",
+              "enchantments": {
+                "unbreaking": 5,
+                "protection": 5
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 7500.0,
+              "sellPrice": 8499.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 0,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§4Anarchiczne spodnie",
+              "material": "netherite_leggings",
+              "bannedLore": "",
+              "enchants": "unbreaking 5, protection 5",
+              "enchantments": {
+                "unbreaking": 5,
+                "protection": 5
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 6999.0,
+              "sellPrice": 8399.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 0,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§4Anarchiczne buty",
+              "material": "netherite_boots",
+              "bannedLore": "",
+              "enchants": "unbreaking 5, protection 5",
+              "enchantments": {
+                "unbreaking": 5,
+                "protection": 5
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 7000.0,
+              "sellPrice": 8999.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 0,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "Elytra",
+              "material": "elytra",
+              "bannedLore": "",
+              "enchants": "unbreaking 3, mending 1",
+              "enchantments": {
+                "unbreaking": 3,
+                "mending": 1
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 90000.0,
+              "sellPrice": 239999.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§4Anarchiczny hełm II",
+              "material": "netherite_helmet",
+              "bannedLore": "",
+              "enchants": "unbreaking 6, protection 6",
+              "enchantments": {
+                "unbreaking": 6,
+                "protection": 6
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 41500.0,
+              "sellPrice": 43999.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 1,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§4Anarchiczna klata II",
+              "material": "netherite_chestplate",
+              "lore": "§7Wydłużenie czasu mikstur §f10%;§7Odporność od upadku §f10%;§7Odporność na wybuchy §f5%",
+              "bannedLore": "",
+              "enchants": "unbreaking 6, protection 6",
+              "enchantments": {
+                "unbreaking": 6,
+                "protection": 6
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 20000.0,
+              "sellPrice": 22999.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 1,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§4Anarchiczne spodnie II",
+              "material": "netherite_leggings",
+              "bannedLore": "",
+              "enchants": "unbreaking 6, protection 6",
+              "enchantments": {
+                "unbreaking": 6,
+                "protection": 6
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 19000.0,
+              "sellPrice": 21999.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 1,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "Totem of Undying",
+              "material": "totem_of_undying",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 1500.0,
+              "sellPrice": 2050.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§3§lZaczarowanie przedmiotu",
+              "material": "blue_dye",
+              "lore": "§8» §7bonusowe §cobrażenia.",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 500.0,
+              "sellPrice": 649.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 1,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "Chorus Fruit",
+              "material": "chorus_fruit",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 500.0,
+              "sellPrice": 569.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "Ender Pearl",
+              "material": "ender_pearl",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 900.0,
+              "sellPrice": 1119.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "Enchanted Golden Apple",
+              "material": "enchanted_golden_apple",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 850.0,
+              "sellPrice": 999.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§c§lWampirze jabłko",
+              "material": "enchanted_golden_apple",
+              "lore": "§8» §7Jest to przedmiot zdobyty podczas;§8» §fWydarzenia Halloweenowego 2026§7!;§8» §7Po zjedzeniu otrzymujesz na;§8» §7krótki czas §csiłę II§7!",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 800.0,
+              "sellPrice": 1199.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 5324,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "Trident",
+              "material": "trident",
+              "lore": "§fCzas przeładowania 12s",
+              "bannedLore": "",
+              "enchants": "unbreaking 3, riptide 3",
+              "enchantments": {
+                "unbreaking": 3,
+                "riptide": 3
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 1600.0,
+              "sellPrice": 2899.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§4Anarchiczny trójząb",
+              "material": "trident",
+              "lore": "§fCzas przeładowania 10s;§7Ten §ctrójząb §7posiada szybsze;§7przeładowanie niż klasyczny!",
+              "bannedLore": "",
+              "enchants": "riptide 4, loyalty 4, channeling 1, impaling 6, unbreaking 4",
+              "enchantments": {
+                "impaling": 6,
+                "channeling": 1,
+                "loyalty": 4,
+                "unbreaking": 4,
+                "riptide": 4
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 4500.0,
+              "sellPrice": 6499.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 1,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§4Anarchiczny kilof",
+              "material": "netherite_pickaxe",
+              "bannedLore": "",
+              "enchants": "unbreaking 5, fortune 5, efficiency 10",
+              "enchantments": {
+                "efficiency": 10,
+                "fortune": 5,
+                "unbreaking": 5
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 25000.0,
+              "sellPrice": 28999.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "ignoreCustomModelData": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "name": "Modern Combat & Crystal",
+  "description": "Konfiguracja do CPvP / BoxPvP: Auto Crystal, Auto Anchor, Auto Totem, Trap, Hole ESP oraz dynamiczny chams."
+}
