@@ -1,7 +1,6 @@
 {
   "version": "1.0.4",
   "minVersion": "1.0.0",
-  "name": "Nufis Client",
-  "downloadUrl": "https://github.com/pandora0client-collab/Nufis",
-  "message": "Nufis %s is now available!"
+  "discord": "https://discord.gg/gyu7KTugB",
+  "message": "Nufis %s is out! Download on our Discord"
 }
