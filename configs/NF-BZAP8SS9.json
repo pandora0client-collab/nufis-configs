@@ -1474,10 +1474,10 @@
       "enabled": false,
       "favourite": false,
       "activation": "Toggle",
-      "key": -1,
+      "key": 24,
       "bind": {
-        "type": "none",
-        "code": -1
+        "type": "keyboard",
+        "code": 24
       },
       "additionalBinds": [],
       "options": {
