@@ -196,7 +196,7 @@
       }
     },
     "World Particles": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -214,7 +214,7 @@
       }
     },
     "Soul Particles": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -278,7 +278,7 @@
       }
     },
     "Totem Particles": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -333,7 +333,7 @@
       }
     },
     "Jump Circles": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -345,11 +345,14 @@
       "options": {
         "Lifetime": 1.4,
         "Radius": 2.2,
-        "Glow": true
+        "Glow": true,
+        "Style": "Tomoe",
+        "Color": "Theme",
+        "Spin Speed": 1.0
       }
     },
     "Trails": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -449,7 +452,7 @@
       }
     },
     "Trajectories": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -533,7 +536,7 @@
       }
     },
     "Chams": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -557,7 +560,7 @@
       }
     },
     "Hit Color": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -569,7 +572,7 @@
       "options": {}
     },
     "Arrows": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -679,13 +682,14 @@
         "Equipment overlay": true,
         "Lava particles": true,
         "Smoke particles": false,
+        "Block particles": true,
         "Weather": false,
         "Vignette": false,
         "Spyglass overlay": false
       }
     },
     "Removals": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -736,7 +740,7 @@
       }
     },
     "Horse Statistics": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -803,7 +807,7 @@
       }
     },
     "Damage Numbers": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -818,7 +822,7 @@
       }
     },
     "Hit Rings": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -873,10 +877,10 @@
       "enabled": false,
       "favourite": false,
       "activation": "Toggle",
-      "key": -1,
+      "key": 49,
       "bind": {
-        "type": "none",
-        "code": -1
+        "type": "keyboard",
+        "code": 49
       },
       "additionalBinds": [],
       "options": {
@@ -1081,10 +1085,10 @@
       "enabled": false,
       "favourite": false,
       "activation": "Toggle",
-      "key": -1,
+      "key": 19,
       "bind": {
-        "type": "none",
-        "code": -1
+        "type": "keyboard",
+        "code": 19
       },
       "additionalBinds": [],
       "options": {
@@ -1106,7 +1110,9 @@
       },
       "additionalBinds": [],
       "options": {
-        "Third Person": true
+        "Third Person": true,
+        "Through walls": true,
+        "Camera distance": 4.0
       }
     },
     "Air Stuck": {
@@ -1223,7 +1229,7 @@
       "options": {}
     },
     "View Model": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -1241,6 +1247,25 @@
         "Offhand Y": 0.0,
         "Offhand Z": 0.0,
         "Offhand Scale": 1.0
+      }
+    },
+    "Small Shield": {
+      "enabled": true,
+      "favourite": false,
+      "activation": "Toggle",
+      "key": -1,
+      "bind": {
+        "type": "none",
+        "code": -1
+      },
+      "additionalBinds": [],
+      "options": {
+        "Scale": 0.7,
+        "Y": -0.15,
+        "X": 0.0,
+        "Z": 0.0,
+        "Offhand Only": false,
+        "When Blocking": true
       }
     },
     "Liquid Fog": {
@@ -1545,7 +1570,7 @@
       }
     },
     "Error Killer": {
-      "enabled": false,
+      "enabled": true,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -1605,14 +1630,14 @@
       "enabled": false,
       "favourite": false,
       "activation": "Toggle",
-      "key": -1,
+      "key": 11,
       "bind": {
-        "type": "none",
-        "code": -1
+        "type": "keyboard",
+        "code": 11
       },
       "additionalBinds": [],
       "options": {
-        "Mode": "Grim",
+        "Mode": "Legit",
         "Keep Totem": true,
         "Open inventory": true,
         "Inventory delay": 50.0,
@@ -1816,11 +1841,14 @@
       },
       "additionalBinds": [],
       "options": {
-        "Mode": "NewGrim"
+        "Mode": "NewGrim",
+        "Jump Reset": true,
+        "Horizontal": 100.0,
+        "Vertical": 100.0
       }
     },
     "Auto Lever": {
-      "enabled": false,
+      "enabled": true,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -1833,7 +1861,7 @@
         "Range": 4.5,
         "Cooldown": 0.0,
         "Buttons": true,
-        "Hand": "Both"
+        "Hand": "Off"
       }
     },
     "No Delay": {
@@ -1847,7 +1875,11 @@
       },
       "additionalBinds": [],
       "options": {
-        "Right Click": true,
+        "Block Place": true,
+        "Fast XP": true,
+        "Fast Crystals": true,
+        "Projectiles": false,
+        "All Right Click": true,
         "Right Click Delay": 0.0,
         "Jump": true,
         "Block Break": false,
@@ -1884,7 +1916,7 @@
       "options": {}
     },
     "Coordinates": {
-      "enabled": false,
+      "enabled": true,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -1992,7 +2024,7 @@
       }
     },
     "Pearl Tracker": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -2008,7 +2040,7 @@
       }
     },
     "Wet World": {
-      "enabled": true,
+      "enabled": false,
       "favourite": false,
       "activation": "Toggle",
       "key": -1,
@@ -2064,7 +2096,10 @@
         "code": -1
       },
       "additionalBinds": [],
-      "options": {}
+      "options": {
+        "Clear logs": true,
+        "Clear files": true
+      }
     },
     "Placement Guard": {
       "enabled": false,
@@ -2124,7 +2159,7 @@
         "Staff": false,
         "Inventory": true,
         "Notifications": true,
-        "Coordinates": false,
+        "Coordinates": true,
         "Market HUD": true
       }
     }
@@ -2149,6 +2184,10 @@
       "x": 0.0,
       "y": 0.4377729
     },
+    "Coordinates": {
+      "x": 0.27447882,
+      "y": 0.16495782
+    },
     "Cooldowns": {
       "x": 0.0,
       "y": 0.27584973
@@ -2166,8 +2205,8 @@
       "y": 0.19018388
     },
     "Target HUD": {
-      "x": 0.6369095,
-      "y": 0.51752275
+      "x": 0.6288382,
+      "y": 0.50892913
     },
     "Armor": {
       "x": 0.6401856,
@@ -2190,14 +2229,20 @@
       "y": 0.945748
     },
     "Hotkeys": {
-      "x": 0.4356854,
-      "y": 0.5272812
+      "x": 0.7234083,
+      "y": 0.35798794
+    },
+    "Knockback Displacement": {
+      "x": 0.5,
+      "y": 0.02
     }
   },
   "hudOrder": {},
   "hudPieces": {},
   "hudColumns": {},
-  "friends": [],
+  "friends": [
+    "piotereq_2"
+  ],
   "session": {
     "activeProfile": "dawd",
     "loadBinds": true
@@ -2548,7 +2593,7 @@
               "enchantments": {},
               "bannedEnchantsList": [],
               "maxPrice": 1500.0,
-              "sellPrice": 2050.0,
+              "sellPrice": 1999.0,
               "requiredCount": 1,
               "sellCount": 1,
               "minBuyCount": 1,
@@ -2585,8 +2630,8 @@
               "enchants": "",
               "enchantments": {},
               "bannedEnchantsList": [],
-              "maxPrice": 500.0,
-              "sellPrice": 569.0,
+              "maxPrice": 350.0,
+              "sellPrice": 399.0,
               "requiredCount": 1,
               "sellCount": 1,
               "minBuyCount": 1,
@@ -2720,6 +2765,220 @@
               "buyEnabled": true,
               "sellEnabled": true,
               "unitMode": false,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§b§lWata cukrowa",
+              "material": "pink_dye",
+              "lore": "§8» §7Jest to przedmiot zdobyty podczas;§8» §fWydarzenia Szkolnego 2026§7!;§8» §7Po użyciu rozpoczyna §dnaprawę§7 jednego;§8» §7z elementów twojej zbroi do §apełnej trwałości§7.",
+              "bannedLore": "",
+              "enchants": "unbreaking 11",
+              "enchantments": {
+                "unbreaking": 11
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 1200.0,
+              "sellPrice": 1600.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 1,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§b§lWata cukrowa",
+              "material": "pink_dye",
+              "lore": "§8» §7Jest to przedmiot zdobyty podczas;§8» §fwydarzenia cyrkowego 2025§7!;§8» §7Po użyciu rozpoczyna §dnaprawę§7 jednego;§8» §7z elementów twojej zbroi do §apełnej trwałości§7.",
+              "bannedLore": "",
+              "enchants": "unbreaking 11",
+              "enchantments": {
+                "unbreaking": 11
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 1200.0,
+              "sellPrice": 1600.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 1,
+              "ignoreCustomModelData": false,
+              "dyeColor": 10511680
+            },
+            {
+              "name": "§5§lBombarda maxima",
+              "material": "fire_charge",
+              "lore": "§8» §7Po wystrzeleniu wybucha w okolicy;§8» §7i niszczy każdy możliwy blok oprócz;§8» §fskały macierzystej§7!",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 7000.0,
+              "sellPrice": 9999.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 1,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§e§lParawan",
+              "material": "feather",
+              "lore": "§8» §7Jest to przedmiot zdobyty podczas;§8» §fwydarzenia wakacyjnego 2026§7!;§8» §7Po użyciu tego przedmiotu odrzuca;§8» §7wszystkich przeciwników w okolicy!",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 1200.0,
+              "sellPrice": 1600.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 1,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§6§lPiernik",
+              "material": "cookie",
+              "lore": "§8» §7Jest to przedmiot z:;§8» §feventu świątecznego (2024);§8» §7Po zjedzeniu §epiernika §7otrzmujesz;§8» §7efekt §aszybkości kopania 10§7!",
+              "bannedLore": "",
+              "enchants": "unbreaking 10",
+              "enchantments": {
+                "unbreaking": 10
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 1600.0,
+              "sellPrice": 2200.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 346521,
+              "ignoreCustomModelData": false,
+              "dyeColor": 10511680
+            },
+            {
+              "name": "§a§lTurbo-Trap",
+              "material": "egg",
+              "lore": "§8» §7Jest to przedmiot zdobyty podczas;§8» §fwydarzenia wakacyjnego 2026§7!;§8» §7Podczas wystrzelenia Turbotrapu;§8» §fbudujesz prostą pułapkę §7w miejscu eksplozji!",
+              "bannedLore": "",
+              "enchants": "smite 10",
+              "enchantments": {
+                "smite": 10
+              },
+              "bannedEnchantsList": [],
+              "maxPrice": 4000.0,
+              "sellPrice": 4500.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 50,
+              "ignoreCustomModelData": false
+            },
+            {
+              "name": "§3§lBalonik z helem",
+              "material": "player_head",
+              "lore": "§8» §7Jest to przedmiot zdobyty podczas;§8» §fDnia Dziecka 2026§7!;§8» §7Po aktywacji unosi się, niszcząc;§8» §7wszystkie bloki znajdujące się nad nim",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 4000.0,
+              "sellPrice": 4600.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 811,
+              "ignoreCustomModelData": false,
+              "headTextureValue": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGY4NTUyMmVlODE1ZDExMDU4N2ZmZmM3NDExM2Y0MTlkOTI5NTk4ZTI0NjNiOGNlOWQzOWNhYTlmYjZmZjVhYiJ9fX0\u003d"
+            },
+            {
+              "name": "§3§lBalonik z helem",
+              "material": "player_head",
+              "lore": "§8» §7Jest to przedmiot zdobyty podczas;§8» §fDnia Dziecka 2025§7!;§8» §7Po aktywacji unosi się, niszcząc;§8» §7wszystkie bloki znajdujące się nad nim",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 4000.0,
+              "sellPrice": 4600.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 811,
+              "ignoreCustomModelData": false,
+              "dyeColor": 10511680,
+              "headTextureValue": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGY4NTUyMmVlODE1ZDExMDU4N2ZmZmM3NDExM2Y0MTlkOTI5NTk4ZTI0NjNiOGNlOWQzOWNhYTlmYjZmZjVhYiJ9fX0\u003d"
+            },
+            {
+              "name": "§e§lKostka rubika",
+              "material": "player_head",
+              "lore": "§8» §7Kostka rubika była do zdobycia;§8» §7w §f2026 roku §7podczas §adnia dziecka;§8» §7Uderz gracza, aby jego ekwipunek;§8» §7został §fprzemieszany!",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 8000.0,
+              "sellPrice": 11000.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 1,
+              "ignoreCustomModelData": false,
+              "headTextureValue": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODUxM2YwZjFkYzA2MzJkYjhmYzFjMjc5MmE2NjI5ZTA5ZDQ3YzdiMTJjNjM4MjRhNzVjOTRiZjRjZDdlODFkYyJ9fX0\u003d"
+            },
+            {
+              "name": "§4§lDynamit",
+              "material": "red_candle",
+              "lore": "§8» §7Ten przedmiot umożliwi tobie zniszczenie;§8» §7skały macierzystej! §7Wystarczy kliknąć;§8» §7tylko §cprawy §7przycisk!",
+              "bannedLore": "",
+              "enchants": "",
+              "enchantments": {},
+              "bannedEnchantsList": [],
+              "maxPrice": 3999.0,
+              "sellPrice": 4999.0,
+              "requiredCount": 1,
+              "sellCount": 1,
+              "minBuyCount": 1,
+              "minSellCount": 1,
+              "buyEnabled": true,
+              "sellEnabled": true,
+              "unitMode": false,
+              "customModelData": 523,
               "ignoreCustomModelData": false
             }
           ]
